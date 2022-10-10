@@ -14,6 +14,9 @@ body {
     background: linear-gradient(68.15deg, #1a1717 16.62%,  #f8281d 85.61%);
 }
 
+
+
+
 .cabecalho {
 
     display: flex;
@@ -29,12 +32,63 @@ body {
 
 .cabecalho-menu {
 
-display: flex;
-gap: 32px;
+width: 100%;
+height: 50px;
+background-color: 0;
 
 }
 
+.cabecalho-menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.cabecalho-menu ul li {
+
+width: 150px;
+float: right;
+
+}
+
+.cabecalho-menu a{
+
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.cabecalho-menu ul ul {
+
+    position: absolute;
+    visibility: hidden;
+}
+.cabecalho-menu a:hover {
+
+    color: rgb(175, 166, 166);
+
+}
+
+.cabecalho-menu ul ul li {
+
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.cabecalho-menu ul ul li a{
+
+    background-color: rgb(77, 11, 11);
+}
+
+.cabecalho-menu ul li:hover ul {
+
+    visibility: visible;
+}
+
+
 .cabecalho-menu-item {
+    
     font-family: 'sarala', sans-serif;
     color: #FFF;
     font-weight: 400;
@@ -104,6 +158,8 @@ gap: 32px;
 
 .conteudo-principal-escrito-imagem {
     height: 430px;
+
+
 }
 
 .conteudo-secundario {
@@ -151,5 +207,188 @@ gap: 32px;
     display: block;
     margin: 0 auto;
 
+}
+
+
+
+
+.c-plane img {
+
+    
+    transform: translatex(20px)  rotate(7deg);  
+    height: 250px;
+            left: 360px;
+            top: -90px;
+    animation-timing-function: ease-in-out;
+
+
+
+}
+
+
+.c-plane  {
+
+    
+
+animation: fly 1s;
+background: url(../landing_page/eva\ smile.jpg) no repeat center;
+background-size: contain;
+height: rem(145);
+position: absolute;
+top: 40%;
+width: rem(200);
+
+animation: fly;
+animation-duration: 600ms;
+animation-timing-function: linear;
+
+animation-iteration-count: infinite;
+animation-direction: alternate;
+
+
+
+
+}
+
+
+
+.c-plane2 img {
+
+    transform: translatex(20px)  rotate(0deg);  
+
+    height: 250px;
+    left: 520px;
+    top: -90px;
+    animation-timing-function: ease-in-out;
+
+}
+
+.c-plane2  {
+
+    animation: fly 1s;
+    background: url(../landing_page/eva\ smile.jpg) no repeat center;
+    background-size: contain;
+    height: rem(145);
+    position: absolute;
+    top: 40%;
+    width: rem(200);
+    
+    animation: fly;
+    animation-duration: 600ms;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    
+    
+    
+    
+    }
+
+    .c-plane3 img {
+
+        transform: translatex(0px);
+        
+        height: 480px; 
+        left: 400px;
+        top: -200px;
+    
+    
+    }
+    
+    .c-plane3  {
+    
+        animation: fly 1s;
+        background: url(../landing_page/eva\ smile.jpg) no repeat center;
+        background-size: contain;
+        height: rem(145);
+        position: absolute;
+        top: 40%;
+        width: rem(200);
+        
+       
+        
+        
+       
+        
+        
+        
+        
+        }
+
+        .olho-esquerdo img {
+
+            transform: translatex(10px)  rotate(17deg);  
+            height: 100px;
+            left: 493px;
+            top: -180px;
+            animation-timing-function: ease-in-out;
+           
+
+        
+        }
+        
+        .olho-esquerdo  {
+        
+            animation: fly 1s;
+            background: url(../landing_page/eva\ smile.jpg) no repeat center;
+            background-size: contain;
+            height: rem(145);
+            position: absolute;
+            top: 40%;
+            width: rem(200);
+            
+            animation: fly;
+            animation-duration: 800ms;
+            animation-timing-function: linear;
+            
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+            
+            
+            
+            }
+
+
+            .olho-direito img {
+
+                transform: translatex(10px)  rotate(-15deg);  
+                height: 100px;
+                left: 600px;
+                top: -180px;
+                animation-delay: 150ms;
+            
+            }
+            
+            .olho-direito  {
+            
+                animation: fly 1s;
+                background: url(../landing_page/eva\ smile.jpg) no repeat center;
+                background-size: contain;
+                height: rem(145);
+                position: absolute;
+                top: 40%;
+                width: rem(200);
+                
+                animation: fly;
+                animation-duration: 800ms;
+                animation-timing-function: linear;
+                
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                
+                
+                
+                
+                }
+
+@keyframes fly{
+
+0% {
+
+    transform: translatex(0);
+
+}
 }
 
